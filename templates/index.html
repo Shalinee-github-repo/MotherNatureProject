@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} Home Page {% endblock title %}
+
+{% block body %} 
+<div.class="container-fuid my-10 ">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="..." width='10' height='400' >
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Sea waves</h5>
+                <p>Come, let us take a deep dive and forget all our worries.</p>
+              </div>    
+        </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="..." width='10' height='400'>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Lush green woods</h5>
+                <p>Take a long walk through the woods to connect with yourself.</p>
+              </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1509773896068-7fd415d91e2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" class="d-block w-100" alt="..." width='10' height='400'>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Night Sky</h5>
+                <p>Experience the energy coming from millions of light years away to brighten up your life.</p>
+              </div> 
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+</div>
+
+  <h4 class="text-black">Our Company</h4>
+        <p class="text-muted">
+            Nature is the best cure to all the human problems. Stress, anger, insomnia, anxiety or any disease can be easily treated with nature's aid. We, at Mother Nature, value the bond that we share with nature and make use of it in making our lives better. Connecting with nature makes us connect with our inner-self, become less worried, develop a perspective, become more aware and ultimately be in a state of utter peace.
+        </p>
+      </div>
+
+{% endblock body %}

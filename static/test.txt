@@ -1,0 +1,1 @@
+This is to test whether static files are served or not.

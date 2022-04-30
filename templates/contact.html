@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+</style>
+{% block title %} Contacts Page {% endblock title %}
+
+{% block body %} 
+<div class ="container-fluid px-0">
+    <img src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="d-block w-100" alt="..." width='10' height='400' >
+</div>
+<div class="container">
+    <div STYLE=”position:absolute; top:0px; left:20px; width:200px; height:250px”>
+        <h1><CENTER>Contact Us</CENTER></h1>
+    </div>
+
+    <div class="container py-4">
+
+        <form method ="post" action="/contact">
+            {% csrf_token %}
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name here">
+          </div>
+         
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+          </div>
+         
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone No</label>
+            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+          </div>
+         
+          <div class="mb-3">
+            <label for="desc" class="form-label">Tell us more</label>
+            <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">Submit</button>
+            
+          </div>
+
+        </form>
+    </div>
+
+</div> 
+
+{% endblock body %}
